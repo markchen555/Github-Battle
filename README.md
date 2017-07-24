@@ -83,5 +83,3 @@ set up command: `npm install --save-dev babel-core babel-loader babel-preset-env
 ### License
 
 The project is licensed under the [MIT license](license.txt).
-
-# Github-Battle
