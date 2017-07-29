@@ -45,7 +45,7 @@ When you're ready to delploy to production, create a minifield bundle with `npm 
 ### Github Battle Site Info
 
 uses `Webpack` and `Babel` to compile `JSX` to `JavaScript` and hotloading uses `React Router V4` for routing URLs uses `Axios` npm module to hit github's API for user profiles.
-  
+
 
 ---
 
@@ -57,6 +57,7 @@ Dependencies:
 - `react-router-dom`
 - `prop-types`
 - `axios`
+- `query-string`
 
 devDependencies:
 - `babel-core`

@@ -1,6 +1,16 @@
 var React = require('react');
 // import Popular.js
 var Popular = require('./Popular');
+var ReactRouter = require('react-router-dom');
+var Router = ReactRouter.BrowserRouter;
+var Route = ReactRouter.Route;
+// Switch for 404page when input an none exist page assist
+var Switch = ReactRouter.Switch;
+var Nav = require('./Nav');
+var Home = require('./Home');
+var Battle = require('./Battle');
+var Results = require('./Results');
+
 
 // Original way to create react
 //React.createClass()
@@ -14,11 +24,23 @@ class App extends React.Component {
 	render() {
 		// in JSX
 		return (
+			// use React Router then warp code inside <Router>
 			// render Popular component
 			// use className instead of class because class is reserved.
-      		<div className='container'>
-      			<Popular />
-      		</div>
+			<Router>
+	      <div className='container'>
+					<Nav />
+					<Switch>
+						<Route exact path='/' component={Home} />
+						<Route exact path='/battle' component={Battle} />
+					<Route path='/battle/results' component={Results} />
+						<Route path='/popular' component={Popular} />
+						<Route render={function() {
+								return <p> Not Found </p>
+							}} />
+					</Switch>
+	      </div>
+			</Router>
     	)
 		// Transfrom into
 		//return React.createElement('div', null, 'Hello World!');
