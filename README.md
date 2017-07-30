@@ -45,7 +45,7 @@ When you're ready to delploy to production, create a minifield bundle with `npm 
 
 - Enter `npm run create` to create current version of code.
 - Enter `npm run start` to watch and run current version of code.
-- Enter `npm run build` to set NODE_ENV to production and uflify index_bundle into dist folder.
+- Enter `npm run build` to set NODE_ENV to production and uglify index_bundle into dist folder.
 - Enter `npm run firebase-init` to initialize firebase with account and project.
 - Enter `npm run deploy` to deploy the project and hosting.  
 
