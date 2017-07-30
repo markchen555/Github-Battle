@@ -1,6 +1,7 @@
 var React = require('react');
 var PropTypes = require('prop-types');
 var api = require('../utils/api');
+var Loading = require('./Loading');
 
 // Move all the functionality into it's own components ouside Popular.
 // Usually the component has it's own files but since we only use in this file so we just create on the same page.
@@ -17,8 +18,8 @@ function SelectedLanguage (props) {
 					style= {lang === props.selectedLanguage ? {color: '#d0021b'} : null}
 					onClick={props.onSelect.bind(null, lang)}
 					key={lang}
-					> 
-					{lang} 
+					>
+					{lang}
 					</li>)
 			})}
 		</ul>
@@ -109,7 +110,7 @@ class Popular extends React.Component {
 				selectedLanguage={this.state.selectedLanguage}
 				onSelect={this.updateLanguage} />
 				{!this.state.repos
-          			? <p>LOADING!</p>
+          			? <Loading />
           			: <RepoGrid repos={this.state.repos} />}
 			</div>
 		)
@@ -117,4 +118,3 @@ class Popular extends React.Component {
 }
 
 module.exports = Popular;
-

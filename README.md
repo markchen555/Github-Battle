@@ -39,6 +39,15 @@ use create-react-app
 Then open `http://localhost:3000` to see your app.
 When you're ready to delploy to production, create a minifield bundle with `npm run build`.
 
+---
+
+### Hosting
+
+- Enter `npm run create` to create current version of code.
+- Enter `npm run start` to watch and run current version of code.
+- Enter `npm run build` to set NODE_ENV to production and uflify index_bundle into dist folder.
+- Enter `npm run firebase-init` to initialize firebase with account and project.
+- Enter `npm run deploy` to deploy the project and hosting.  
 
 ---
 
@@ -70,6 +79,8 @@ devDependencies:
 - `style-loader`
 - `webpack`
 - `webpack-dev-server`
+- `firebase-tools`
+
 set up command: `npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader html-webpack-plugin webpack webpack-dev-server`
 
 
