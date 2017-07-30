@@ -88,7 +88,14 @@ set up command: `npm install --save-dev babel-core babel-loader babel-preset-env
 
 ### Reference
 
+- [React-Router](https://www.npmjs.com/package/prop-types)
+- [Babel](https://babeljs.io/)
+- [Webpack](https://webpack.github.io/docs/)
+- [Query-String](https://www.npmjs.com/package/query-string)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Prop-Types](https://www.npmjs.com/package/prop-types)
 - [Ngrok Local Web Server](https://ngrok.com/docs)
+- [Firebase](https://github.com/firebase/firebase-toolss)
 
 ---
 
